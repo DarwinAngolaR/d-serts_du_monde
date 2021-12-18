@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.banner{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 3%;
+}
+
+h1{
+    color: rgb(170, 97, 1);
+    font-family: sans-serif;
+    font-style: oblique;
+    margin: 3%;
+    font-size: 24px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.menu1{
+    background-color: rgb(206, 206, 206);
+    flex: 1 1 50%;
+    padding: 3%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: black;
+}
+
+a{
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.principal{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 18px;
+    width: auto;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.par1{
+    font-size: 14px;
+    line-height: 1.2em;
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 10px 0;
+    width: auto;
+}
+
+.derecha{
+    display: flex;
+    flex: 0 1 35%;
+    flex-flow: row wrap;
+    padding: 0 5%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    height: 350px;
+}
+
+.top5{
+    width: 50%;
+}
+
+.titre2{
+    font-size: 20px;
+    text-align: left;
+    margin: 35px 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-bottom: 5%;
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.lista2{
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 50%;
+}
+
+.galery{
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 50%;
+}
+
+.footer{
+    border-top: 1px solid rgb(221, 221, 221);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+/*Styles spécifiques pour les écrans de taille moyenne type tablette*/
+
+@media screen and (max-width: 780px){
+    .menu{
+        flex-flow: column wrap;
+    }
+    .derecha{
+        display: none;
+    }
+
+    .principal img{
+        width: 100%;
+    }
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media screen and (min-width: 980px){
+    body{
+        background-color: rgb(221, 221, 221);
+    }
+    
+    .body{
+        width: 900px;
+        margin: auto;
+        background-color: white;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        width: auto;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(221, 221, 221)
+    }
+    
+    .banner{
+        flex-flow: row wrap;
+        width: 40%;
+    }
+    
+    .bannerd{
+        flex-flow: row wrap;
+        width: 40%;
+    }
+
+    .menu1{
+        background-color: white;
+    }
+    .body2{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .principal{
+        width: 55%;
+    } 
+    .derecha{
+        display: block;
+        border: none;
+        padding-top: 5%;
+    }
+    .top5{
+        width: auto;
+    }
+}
